@@ -25,15 +25,15 @@
             <Image url="@src/main/resources/img/back.png" />
          </image>
       </ImageView>
-      <Button id="new-game" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="380.0" layoutY="157.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" textOverrun="CLIP" />
+      <Button id="new-game" fx:id="new_game" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="380.0" layoutY="157.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" textOverrun="CLIP" />
       <ImageView fitHeight="37.0" fitWidth="143.0" layoutX="368.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@src/main/resources/img/new-game.png" />
          </image>
       </ImageView>
-      <Button id="continue" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="378.0" layoutY="212.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" textOverrun="CLIP" />
-      <Button id="options" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="393.0" layoutY="321.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" textOverrun="CLIP" />
-      <Button id="quit" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="377.0" layoutY="272.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" textOverrun="CLIP" />
+      <Button id="continue" fx:id="load_game" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="378.0" layoutY="212.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" textOverrun="CLIP" />
+      <Button id="options" fx:id="quit" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="393.0" layoutY="321.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" textOverrun="CLIP" />
+      <Button id="quit" fx:id="options" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="377.0" layoutY="272.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" textOverrun="CLIP" />
       <ImageView fitHeight="37.0" fitWidth="143.0" layoutX="369.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@src/main/resources/img/load_but.png" />
