@@ -21,7 +21,7 @@
       </Lighting>
    </effect>
    <children>
-      <ImageView accessibleRole="BUTTON" fitHeight="600.0" fitWidth="900.0">
+      <ImageView fx:id="back" accessibleRole="BUTTON" fitHeight="600.0" fitWidth="900.0">
          <image>
             <Image url="/img/back.png" />
          </image>

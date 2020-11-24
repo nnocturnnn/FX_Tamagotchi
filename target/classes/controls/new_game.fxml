@@ -24,7 +24,7 @@
       </Lighting>
    </effect>
    <children>
-      <ImageView accessibleRole="BUTTON" fitHeight="600.0" fitWidth="900.0">
+      <ImageView fx:id="back" accessibleRole="BUTTON" fitHeight="600.0" fitWidth="900.0">
          <image>
             <Image url="/img/back.png" />
          </image>
@@ -74,13 +74,13 @@
             <Image url="/img/sq_lil_but.png" />
          </image>
       </ImageView>
-      <TextField fx:id="name_f" layoutX="370.0" layoutY="213.0" promptText="Pikachu" style="-fx-background-color: green;" />
-      <TextField fx:id="health_f" layoutX="371.0" layoutY="321.0" promptText="1-100" style="-fx-background-color: green;" />
+      <TextField fx:id="petNameBox" layoutX="370.0" layoutY="213.0" promptText="Pikachu" style="-fx-background-color: green;" />
+      <TextField fx:id="petHealthBox" layoutX="371.0" layoutY="321.0" promptText="1-100" style="-fx-background-color: green;" />
       <Button id="options" fx:id="cher" onAction="#chermander" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="450.0" layoutY="255.0" mnemonicParsing="false" opacity="0.0" prefHeight="57.0" prefWidth="64.0" textOverrun="CLIP" />
       <Button id="options" fx:id="pika" onAction="#pikachu" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="367.0" layoutY="256.0" mnemonicParsing="false" opacity="0.0" prefHeight="57.0" prefWidth="64.0" textOverrun="CLIP" />
       <Button id="options" fx:id="bulb" onAction="#bulbasaur" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="534.0" layoutY="255.0" mnemonicParsing="false" opacity="0.0" prefHeight="57.0" prefWidth="64.0" textOverrun="CLIP" />
       <Button id="options" fx:id="sqrt" onAction="#squirtle" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="614.0" layoutY="253.0" mnemonicParsing="false" opacity="0.0" prefHeight="57.0" prefWidth="64.0" textOverrun="CLIP" />
       <Button id="back" fx:id="back" onAction="#back" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="393.0" layoutY="430.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="98.0" textOverrun="CLIP" />
-      <Button id="quit" fx:id="play" onAction="#quit" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="388.0" layoutY="376.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="103.0" textOverrun="CLIP" />
+      <Button id="quit" fx:id="play" onAction="#play" accessibleRole="IMAGE_VIEW" contentDisplay="GRAPHIC_ONLY" layoutX="388.0" layoutY="376.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="103.0" textOverrun="CLIP" />
    </children>
 </Pane>

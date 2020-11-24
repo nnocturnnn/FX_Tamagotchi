@@ -3,9 +3,13 @@ package world.ucode.controls;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import world.ucode.scenes.NewScene;
+import javafx.scene.control.TextField;
 
 public class NewGameControl {
 
+    public String type;
+    public TextField petNameBox;
+    public TextField petHealthBox;
     public Button chermander;
     public Button squirtle;
     public Button bulbasaur;
@@ -15,26 +19,34 @@ public class NewGameControl {
 
     @FXML
     public void pikachu() { 
-        (new NewScene("new_game.fxml")).setScene(); 
+        type = "pikachu";
     }
 
     @FXML
     public void chermander() {
-        (new NewScene("LoadGame.fxml")).setScene();
+        type = "chermander";
     }
 
     @FXML
     public void bulbasaur() {
-        (new NewScene("Setting.fxml")).setScene();
+        type = "bulbasaur";
     }
 
     @FXML
     public void squirtle() {
-        (new NewScene("Setting.fxml")).setScene();
+        type = "squirtle";
     }
 
     @FXML
-    public void quit() { System.exit(0); }
+    public void play() {
+        String health = petHealthBox.getText();
+        if (health.equals("")) {
+            health = "10";
+        }
+        Database.insertNewDB(petNameBox.getText(), type, 
+                            Integer.parseInt(health));
+        (new NewScene("Game.fxml")).setScene();
+    }
 
     @FXML
     public void back() {

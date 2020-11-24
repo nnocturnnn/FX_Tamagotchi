@@ -2,39 +2,60 @@ package world.ucode.controls;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
+import world.ucode.Database;
+import javafx.scene.Scene;
+import javafx.scene.image.ImageView;
+import javafx.scene.image.Image;
+import javafx.scene.layout.Pane;
 import world.ucode.scenes.NewScene;
+
 
 public class SettingControl {
 
-    public Button offy;
-    public Button onny;
-    public Button back1;
-    public Button back2;
-    // public Button backi;
-    // public Button backy;
+    public Button sound_off;
+    public Button sound_on;
+    public Button backg_f;
+    public Button backg_s;
+    public ChoiceBox<String> difficultySettings;
+    public String background;
+    public String sound;
+    public Button back;
+    public Button play;
 
     @FXML
     public void sound_off() { 
-        (new NewScene("new_game.fxml")).setScene(); 
+        sound = "off";
     }
 
     @FXML
     public void sound_on() {
-        (new NewScene("LoadGame.fxml")).setScene();
+        sound = "on";
     }
 
     @FXML
     public void backg_f() {
-        (new NewScene("Setting.fxml")).setScene();
+        background = "1";
     }
 
     @FXML
-    public void backg_s() { System.exit(0); }
+    public void backg_s() {
+        background = "2";
+     }
 
     @FXML
-    public void back() { System.exit(0); }
+    public void back() {
+        (new NewScene("Menu.fxml")).setScene();
+    }
 
     @FXML
-    public void play() { System.exit(0); }
+    public void play() {
+        Pane pane = new Pane();
+        Image image = new Image("/img/back" + background + ".jpg");
+        ImageView back = new ImageView(image);
+        pane.add(back);
+        String diff = difficultySettings.getValue();
+        Database.updateSettings(sound, background, diff);
+    }
 
 }

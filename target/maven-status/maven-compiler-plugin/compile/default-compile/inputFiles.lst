@@ -1,3 +1,5 @@
+/Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/controls/NewGameControl.java
+/Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/controls/SettingControl.java
 /Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/controls/MenuControl.java
 /Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/Database.java
 /Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/scenes/InterfaceScene.java
@@ -7,3 +9,4 @@
 /Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/scenes/AbstractScene.java
 /Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/scenes/NewScene.java
 /Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/utils/Calculation.java
+/Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/controls/GameControl.java
