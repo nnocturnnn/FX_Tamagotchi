@@ -11,7 +11,7 @@ public class Tamagochi extends Application {
     public void start(Stage primaryStage) {
         stage = primaryStage;
         primaryStage.setTitle("Tamagochi");
-        (new NewScene("MainMenu.fxml")).setScene();
+        (new NewScene("Menu.fxml")).setScene();
         primaryStage.show();
     }
 

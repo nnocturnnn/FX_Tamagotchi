@@ -3,7 +3,7 @@ package world.ucode.scenes;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import world.ucode.Database;
+// import world.ucode.Database;
 
 import java.util.Objects;
 
@@ -13,11 +13,11 @@ public class NewScene extends AbstractScene {
 
     public NewScene(String str) {
         String css = scenePath;
-        if (Objects.equals(Database.getThemeSettings(), "Standart")) {
-            css += "Game.css";
-        } else {
-            css += "Dark.css";
-        }
+        // if (Objects.equals(Database.getThemeSettings(), "Standart")) {
+        //     css += "Game.css";
+        // } else {
+        //     css += "Dark.css";
+        // }
         String theme = getClass().getResource(css).toExternalForm();
         try {
             FXMLLoader fxmlLoad = new FXMLLoader(getClass().getResource(scenePath + str));
