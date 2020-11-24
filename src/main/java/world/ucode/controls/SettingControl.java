@@ -1,6 +1,7 @@
 package world.ucode.controls;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import world.ucode.Database;
@@ -11,7 +12,11 @@ import javafx.scene.layout.Pane;
 import world.ucode.scenes.NewScene;
 
 
-public class SettingControl {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+
+public class SettingControl implements Initializable {
 
     public Button sound_off;
     public Button sound_on;
@@ -22,6 +27,18 @@ public class SettingControl {
     public String sound;
     public Button back;
     public Button play;
+
+    @FXML
+    public ImageView backgr;
+    
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        sound = Database.getSoundSettings();
+        background = Database.getThemeSettings();
+        backgr.setImage(new Image(background));
+        difficultySettings.setValue((Database.getDifficultySettings()));
+    }
 
     @FXML
     public void sound_off() { 
@@ -50,12 +67,10 @@ public class SettingControl {
 
     @FXML
     public void play() {
-        Pane pane = new Pane();
-        Image image = new Image("/img/back" + background + ".jpg");
-        ImageView back = new ImageView(image);
-        pane.add(back);
+        String path = "/img/back" + background + ".png";
         String diff = difficultySettings.getValue();
-        Database.updateSettings(sound, background, diff);
+        Database.updateSettings(sound, path, diff);
+        (new NewScene("Setting.fxml")).setScene();
     }
 
 }
