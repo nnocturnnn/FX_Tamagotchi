@@ -14,6 +14,14 @@ public class GameControl {
     public Button pikachu;
 
     @FXML
+    public ImageView backgr;
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        backgr.setImage(new Image(Database.getThemeSettings()));
+    }
+
+    @FXML
     public void pill() { 
         (new NewScene("new_game.fxml")).setScene(); 
     }
