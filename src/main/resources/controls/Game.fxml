@@ -5,12 +5,24 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?imposr world.ucode.controls.GameControl?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="world.ucode.controls.GameControl">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="world.ucode.controls.GameControl" stylesheets="/css/font.css">
    <children>
-      <ImageView fx:id="back" fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="backgr" fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="/img/back2.png" />
+         </image>
+      </ImageView>
+       <Label layoutX="90.0" layoutY="410.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 170; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="50" textFill="#d722e8">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="141.0" fitWidth="115.0" layoutX="400.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/img/sq_lil_but.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="53.0" fitWidth="115.0" layoutX="666.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
@@ -18,9 +30,9 @@
             <Image url="/img/back-but.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="41.0" fitWidth="115.0" layoutX="671.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="141.0" fitWidth="115.0" layoutX="671.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="/img/unnamed%20(2).png" />
+            <Image url="/img/pizza.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="152.0" fitWidth="174.0" layoutX="650.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
@@ -28,9 +40,9 @@
             <Image url="/img/unnamed.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="135.0" fitWidth="133.0" layoutX="648.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="135.0" fitWidth="133.0" layoutX="648.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="/img/unnamed%20(1).png" />
+            <Image url="/img/soap.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="135.0" fitWidth="133.0" layoutX="648.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">

@@ -21,8 +21,8 @@ public class SettingControl implements Initializable {
     public Button backg_f;
     public Button backg_s;
     public ChoiceBox<String> difficultySettings;
-    public String background;
-    public String sound;
+    public String background = "1";
+    public String sound = "off";
     public Button back;
     public Button play;
 

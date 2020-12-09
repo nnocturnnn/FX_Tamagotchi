@@ -1,6 +1,5 @@
-.fonty {
-background: #ea6b77;
-height: 100%;
-font-family: 'Press Start 2P', cursive;
-color: #fff;
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+@font-face {
+    font-family: "Press Start 2P";
 }

@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?imposr world.ucode.controls.NewGameControl?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="world.ucode.controls.NewGameControl">
+<Pane fx:id="n_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="world.ucode.controls.NewGameControl" stylesheets="/css/font.css">
    <effect>
       <Lighting>
          <bumpInput>
@@ -39,17 +39,17 @@
             <Image url="/img/back-but.png" />
          </image>
       </ImageView>
-      <Label layoutX="259.0" layoutY="205.0" prefHeight="40.0" prefWidth="102.0" style="-fx-font-family: 'Press Start 2P';" styleClass="fonty" text="Name :" textFill="#d722e8">
+      <Label layoutX="259.0" layoutY="205.0" prefHeight="40.0" prefWidth="102.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 170; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="Name:">
          <font>
             <Font size="33.0" />
          </font>
       </Label>
-      <Label layoutX="256.0" layoutY="256.0" prefHeight="40.0" prefWidth="90.0" style="-fx-font-family: 'Press Start 2P';" styleClass="fonty" text="Type :" textFill="#d722e8">
+      <Label layoutX="256.0" layoutY="256.0" prefHeight="40.0" prefWidth="90.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 170; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="Type:" textFill="#d722e8">
          <font>
             <Font size="33.0" />
          </font>
       </Label>
-      <Label layoutX="262.0" layoutY="313.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P';" styleClass="fonty" text="Health :" textFill="#d722e8">
+      <Label layoutX="242.0" layoutY="313.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 170; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="Health:" textFill="#d722e8">
          <font>
             <Font size="33.0" />
          </font>
