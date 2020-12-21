@@ -1,12 +1,14 @@
 /Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/controls/NewGameControl.java
 /Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/controls/SettingControl.java
 /Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/controls/MenuControl.java
-/Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/Database.java
 /Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/scenes/InterfaceScene.java
 /Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/GameGeometry.java
 /Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/Tamagochi.java
 /Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/Model.java
 /Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/scenes/AbstractScene.java
 /Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/scenes/NewScene.java
-/Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/utils/Calculation.java
 /Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/controls/GameControl.java
+/Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/Database.java
+/Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/utils/Utils.java
+/Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/utils/SpriteAnimation.java
+/Users/asydoruk/FX_Tamagotchi/src/main/java/world/ucode/utils/Calculation.java

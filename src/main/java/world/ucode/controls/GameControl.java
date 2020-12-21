@@ -4,12 +4,15 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import world.ucode.scenes.NewScene;
+import world.ucode.utils.*;
 import java.net.URL;
 import world.ucode.Database;
+import world.ucode.Model;
 import java.util.ResourceBundle;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
 import javafx.scene.control.Label;
+import javafx.animation.AnimationTimer;
 
 public class GameControl implements Initializable {
 
@@ -20,13 +23,29 @@ public class GameControl implements Initializable {
     public Button backButton;
     public Button pikachu;
 
-    @FXML
-    public ImageView backgr;
+    private Model pet;
+
+    @FXML public ImageView backgr;
+    @FXML public Label name_pet;
+    @FXML public ImageView hero;
+    @FXML public Label helsi;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Label label = new Label("0");
+        pet = new Model();
+        hero.setImage(new Image("/img/" + pet.getType() + "_lil.png"));
         backgr.setImage(new Image(Database.getThemeSettings()));
+        name_pet.setText(pet.getName());
+        helsi.setText("health: " + String.valueOf(pet.getHealth()));
+        AnimationTimer timer = new AnimationTimer() {
+            @Override
+            public void handle(long now) {
+                this.stop();
+                update();
+            }
+        };
+        timer.start();
+
     }
 
     @FXML

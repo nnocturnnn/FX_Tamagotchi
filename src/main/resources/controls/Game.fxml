@@ -15,16 +15,51 @@
             <Image url="/img/back2.png" />
          </image>
       </ImageView>
+      <ImageView fx:id="hero" fitHeight="141.0" fitWidth="115.0" layoutX="400.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/img/sq_lil_but.png" />
+         </image>
+      </ImageView>
        <Label layoutX="90.0" layoutY="410.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 170; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="50" textFill="#d722e8">
          <font>
             <Font size="33.0" />
          </font>
       </Label>
-      <ImageView fitHeight="141.0" fitWidth="115.0" layoutX="400.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="/img/sq_lil_but.png" />
-         </image>
-      </ImageView>
+      <Label layoutX="50.0" layoutY="350.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="purity: 10" textFill="#d722e8">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="helsi" layoutX="50.0" layoutY="310.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="health: 10" textFill="#d722e8">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="270.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="water: 10" textFill="#d722e8">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="230.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="satiety: 10" textFill="#d722e8">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="190.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="joy: 10" textFill="#d722e8">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="150.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="lvl: 1" textFill="#d722e8">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label  fx:id="name_pet" layoutX="50.0" layoutY="100.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="Name" textFill="#d722e8">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
       <ImageView fitHeight="53.0" fitWidth="115.0" layoutX="666.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="/img/back-but.png" />

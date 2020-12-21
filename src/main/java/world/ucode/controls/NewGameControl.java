@@ -20,22 +20,22 @@ public class NewGameControl {
 
     @FXML
     public void pikachu() { 
-        type = "pikachu";
+        this.type = "pikachu";
     }
 
     @FXML
     public void chermander() {
-        type = "chermander";
+        this.type = "chermander";
     }
 
     @FXML
     public void bulbasaur() {
-        type = "bulbasaur";
+        this.type = "bulbasaur";
     }
 
     @FXML
     public void squirtle() {
-        type = "squirtle";
+        this.type = "squirtle";
     }
 
     @FXML
