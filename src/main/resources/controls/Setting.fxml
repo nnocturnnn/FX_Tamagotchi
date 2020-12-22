@@ -66,7 +66,7 @@
             <Image url="/img/off-but.png" />
          </image>
       </ImageView>
-      <ChoiceBox fx:id="difficultySettings" layoutX="375.0" layoutY="330.0" prefWidth="150.0" style="-fx-background-color: green;">
+      <ChoiceBox fx:id="difficultySettings" layoutX="375.0" layoutY="330.0" prefWidth="150.0"  style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 250; -fx-min-height: 25; -fx-font-size: 20; -fx-background-color: transparent;  -fx-mark-color: #d722e8; -fx-text-fill: white; ">
          <items>
             <FXCollections fx:factory="observableArrayList">
                <String fx:value="Easy" />

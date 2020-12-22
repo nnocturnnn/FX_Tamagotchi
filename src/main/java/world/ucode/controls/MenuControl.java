@@ -18,7 +18,7 @@ public class MenuControl {
 
     @FXML
     public void loadGame() {
-        (new NewScene("LoadGame.fxml")).setScene();
+        (new NewScene("Load.fxml")).setScene();
     }
 
     @FXML

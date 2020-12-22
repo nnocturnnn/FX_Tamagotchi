@@ -3,3 +3,11 @@
 @font-face {
     font-family: "Press Start 2P";
 }
+
+.choice-box .label {
+    -fx-text-fill: d722e8; 
+}
+
+.choice-box .context-menu {
+    -fx-background-color: transparent ;
+}

@@ -1,4 +1,4 @@
-package world.ucode;
+package world.ucode.utils;
 
 import javafx.animation.Animation;
 import javafx.animation.Interpolator;

@@ -8,7 +8,7 @@ import world.ucode.Database;
 
 public class NewGameControl {
 
-    public String type;
+    public String type = "pikachu";
     public TextField petNameBox;
     public TextField petHealthBox;
     public Button chermander;

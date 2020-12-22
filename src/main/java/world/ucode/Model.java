@@ -2,8 +2,11 @@ package world.ucode;
 
 import world.ucode.utils.Calculation;
 import java.util.Random;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 
-public class Model {
+
+public class Model extends Pane {
     private final Calculation calc;
 
     public int id;
@@ -15,12 +18,18 @@ public class Model {
     private int age;
     private int hunger;
     private int thirst;
+    private int tired;
     private int happiness;
     private int cleanliness;
     private int health;
     private int coin;
     public boolean isAlive;
     public boolean isSick;
+
+    public Model(ImageView imageView) {
+        Database.loadModel(this);
+        this.calc = new Calculation(max);
+    }
 
     public void setCoin(int num) {
         this.coin = num;
@@ -59,6 +68,15 @@ public class Model {
     public void setSick(boolean sick) {
         isSick = sick;
     }
+
+    public void setTired(int tired) {
+        this.tired = tired;
+    }
+
+    public int getTired() {
+        return tired;
+    }
+
     public int getCoin() {
         return coin;
     }
@@ -94,10 +112,6 @@ public class Model {
         return isSick ? 1 : 0;
     }
 
-    public Model() {
-        Database.loadModel(this);
-        this.calc = new Calculation(max);
-    }
 
     public void aging() { age++; }
     public int getAge() { return age; }
@@ -149,6 +163,7 @@ public class Model {
         cleanliness += 3;
         checkVitals();
     }
+
 
     public void giveMedicine() {
         if (health >= max) {

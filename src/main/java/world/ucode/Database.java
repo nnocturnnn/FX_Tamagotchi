@@ -48,7 +48,7 @@ public class Database {
                 " happy integer, clean integer, tired integer," +
                 " health integer, isAlive integer, isSick integer," +
                 " time text, " +
-                " active integer" +
+                " active integer, point integer" +
                 ");";
         try {
            st = conn.createStatement();
@@ -98,7 +98,7 @@ public class Database {
             pst.setInt(6, max * 2/10); // thirst
             pst.setInt(7, max * 2/10); // happy
             pst.setInt(8, max * 8/10); // clean
-            pst.setInt(9, 0); // tired
+            pst.setInt(9, 50); // tired
             pst.setInt(10, max); // health
             pst.setInt(11, 1); // isAlive
             pst.setInt(12, 0); // isSick
@@ -130,7 +130,7 @@ public class Database {
             model.setThirst(rs.getInt("thirst"));
             model.setHappiness(rs.getInt("happy"));
             model.setCleanliness(rs.getInt("clean"));
-            // model.setTired(rs.getInt("tired"));
+            model.setTired(rs.getInt("tired"));
             model.setHealth(rs.getInt("health"));
             model.setAlive(rs.getInt("isAlive") > 0);
             model.setSick(rs.getInt("isSick") > 0);
@@ -154,7 +154,7 @@ public class Database {
             pst.setInt(3, m.getThirst());
             pst.setInt(4, m.getHappiness());
             pst.setInt(5, m.getCleanliness());
-            // pst.setInt(6, m.getTired());
+            pst.setInt(6, m.getTired());
             pst.setInt(7, m.getHealth());
             pst.setInt(8, m.getAliveInt());
             pst.setInt(9, m.getSickInt());
