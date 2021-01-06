@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?imposr world.ucode.controls.LoadGameControl?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="world.ucode.controls.SettingControl"  stylesheets="/css/font.css">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="world.ucode.controls.LoadGameControl"  stylesheets="/css/font.css">
    <effect>
       <Lighting>
          <bumpInput>

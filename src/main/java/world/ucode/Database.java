@@ -228,7 +228,7 @@ public class Database {
             pst = conn.prepareStatement(sql1);
 //            pst.setInt(1, 1);
             pst.setString(1, "ON");
-            pst.setString(2, "Standart");
+            pst.setString(2, "/img/back1.png");
             pst.setString(3, "Easy");
             pst.executeUpdate();
 

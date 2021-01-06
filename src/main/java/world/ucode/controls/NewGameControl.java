@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import world.ucode.scenes.NewScene;
 import javafx.scene.control.TextField;
+import world.ucode.utils.Utils;
 import world.ucode.Database;
 
 public class NewGameControl {
@@ -19,27 +20,32 @@ public class NewGameControl {
     public Button pikachu;
 
     @FXML
-    public void pikachu() { 
+    public void pikachu() {
+        Utils.playSound("pika.mp3");
         this.type = "pikachu";
     }
 
     @FXML
     public void chermander() {
+        Utils.playSound("char.mp3");
         this.type = "chermander";
     }
 
     @FXML
     public void bulbasaur() {
+        Utils.playSound("bulbasaur.mp3");
         this.type = "bulbasaur";
     }
 
     @FXML
     public void squirtle() {
+        Utils.playSound("squirt.mp3");
         this.type = "squirtle";
     }
 
     @FXML
     public void play() {
+        Utils.playSound("click.mp3");
         String health = petHealthBox.getText();
         if (health.equals("")) {
             health = "10";
@@ -51,6 +57,7 @@ public class NewGameControl {
 
     @FXML
     public void back() {
+        Utils.playSound("click.mp3");
         (new NewScene("Menu.fxml")).setScene();
     }
 

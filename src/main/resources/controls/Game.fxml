@@ -20,7 +20,7 @@
             <Image url="/img/sq_lil_but.png" />
          </image>
       </ImageView>
-       <Label layoutX="90.0" layoutY="410.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 170; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="50" textFill="#d722e8">
+       <Label fx:id="coin" layoutX="90.0" layoutY="410.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 170; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="" textFill="#d722e8">
          <font>
             <Font size="33.0" />
          </font>
