@@ -54,10 +54,15 @@ With time pass 3 random events:
 
 
 
-![view game](screen/menu.png)
+![](screen/menu.png)
 
-![menu](https://i.postimg.cc/Gh36VJ1T/tamagochi-02.png?raw=true "menu")
+![](screen/opt.png)
 
-![settings](https://i.postimg.cc/sD245CxB/tamagochi-01.png?raw=true "settings")
+![](screen/new_Game.png)
 
-![new game](https://i.postimg.cc/15WbQn9C/tamagochi-04.png?raw=true "new game")
+![](screen/game.png)
+
+![](screen/load.png)
+
+![](screen/go.png)
+
