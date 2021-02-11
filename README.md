@@ -54,7 +54,7 @@ With time pass 3 random events:
 
 
 
-![view game](https://github.com/nnocturnnn/FX_Tamagotchi/blob/master/screen/game.png ?raw=true "gameplay")
+![view game](screen/menu.png)
 
 ![menu](https://i.postimg.cc/Gh36VJ1T/tamagochi-02.png?raw=true "menu")
 
