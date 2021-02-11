@@ -25,7 +25,7 @@
             <Font size="33.0" />
          </font>
       </Label>
-      <Label layoutX="50.0" layoutY="350.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="purity: 10" textFill="#d722e8">
+      <Label fx:id="purity" layoutX="50.0" layoutY="350.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="purity: 10" textFill="#d722e8">
          <font>
             <Font size="33.0" />
          </font>
@@ -35,17 +35,22 @@
             <Font size="33.0" />
          </font>
       </Label>
-      <Label layoutX="50.0" layoutY="270.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="water: 10" textFill="#d722e8">
+      <Label fx:id="thirst" layoutX="50.0" layoutY="270.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="water: 10" textFill="#d722e8">
          <font>
             <Font size="33.0" />
          </font>
       </Label>
-      <Label layoutX="50.0" layoutY="230.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="satiety: 10" textFill="#d722e8">
+      <Label fx:id="satiety" layoutX="50.0" layoutY="230.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="satiety: 10" textFill="#d722e8">
          <font>
             <Font size="33.0" />
          </font>
       </Label>
-      <Label layoutX="50.0" layoutY="190.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="joy: 10" textFill="#d722e8">
+      <Label fx:id="joy" layoutX="50.0" layoutY="190.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="joy: 10" textFill="#d722e8">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="imunity" layoutX="50.0" layoutY="120.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="imunity: 10" textFill="#d722e8">
          <font>
             <Font size="33.0" />
          </font>
@@ -55,7 +60,7 @@
             <Font size="33.0" />
          </font>
       </Label>
-      <Label  fx:id="name_pet" layoutX="50.0" layoutY="100.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="Name" textFill="#d722e8">
+      <Label  fx:id="name_pet" layoutX="50.0" layoutY="90.0" prefHeight="40.0" prefWidth="121.0" style="-fx-font-family: 'Press Start 2P'; -fx-min-width: 270; -fx-min-height: 25; -fx-text-fill: #d722e8; -fx-font-size: 20;" text="Name" textFill="#d722e8">
          <font>
             <Font size="50.0" />
          </font>
@@ -97,9 +102,9 @@
       </ImageView>
       <Button fx:id="pill" onAction="#pill" layoutX="688.0" layoutY="176.0" mnemonicParsing="false" opacity="0.0" prefHeight="24.0" prefWidth="57.0" text="Button" />
       <Button fx:id="water" onAction="#water" layoutX="697.0" layoutY="348.0" mnemonicParsing="false" opacity="0.0" prefHeight="88.0" prefWidth="49.0" text="Button" />
-      <Button fx:id="soap" onAction="#soap" layoutX="678.0" layoutY="455.0" mnemonicParsing="false" opacity="0.0" prefHeight="31.0" prefWidth="87.0" text="Button" />
+      <Button fx:id="soap" onAction="#eat" layoutX="678.0" layoutY="455.0" mnemonicParsing="false" opacity="0.0" prefHeight="31.0" prefWidth="87.0" text="Button" />
       <Button fx:id="back" onAction="#back" layoutX="677.0" layoutY="515.0" mnemonicParsing="false" opacity="0.0" prefHeight="27.0" prefWidth="98.0" text="Button" />
       <Button fx:id="play" onAction="#play" layoutX="678.0" layoutY="100.0" mnemonicParsing="false" opacity="0.0" prefHeight="40.0" prefWidth="75.0" />
-      <Button fx:id="eat" onAction="#eat" layoutX="682.0" layoutY="242.0" mnemonicParsing="false" opacity="0.0" prefHeight="67.0" prefWidth="75.0" />
+      <Button fx:id="eat" onAction="#soap" layoutX="682.0" layoutY="242.0" mnemonicParsing="false" opacity="0.0" prefHeight="67.0" prefWidth="75.0" />
    </children>
 </Pane>

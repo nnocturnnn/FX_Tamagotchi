@@ -2,6 +2,7 @@ package world.ucode;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class Database {
     public static Connection conn = null;
@@ -48,7 +49,7 @@ public class Database {
                 " happy integer, clean integer, tired integer," +
                 " health integer, isAlive integer, isSick integer," +
                 " time text, " +
-                " active integer, point integer" +
+                " active integer, point integer, imunity integer" +
                 ");";
         try {
            st = conn.createStatement();
@@ -83,9 +84,12 @@ public class Database {
     }
 
     public static void insertNewDB(String name, String type, int max) {
+        Calendar start = Calendar.getInstance();
+        String milliseconds = String.valueOf(start.getTimeInMillis());
+        String time = milliseconds + " " + milliseconds + " " + milliseconds + " " + milliseconds;
         String sql = "INSERT INTO " +
-                "game(name,type,max,age,hunger,thirst,happy,clean,tired,health,isAlive,isSick,time,active) " +
-                "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+                "game(name,type,max,age,hunger,thirst,happy,clean,tired,health,isAlive,isSick,time,active,imunity) " +
+                "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         try {
             pst = conn.prepareStatement(sql);
 
@@ -94,16 +98,17 @@ public class Database {
             pst.setInt(3, max);
 
             pst.setInt(4, 0); // age
-            pst.setInt(5, max * 2/10); // hunger
-            pst.setInt(6, max * 2/10); // thirst
-            pst.setInt(7, max * 2/10); // happy
-            pst.setInt(8, max * 8/10); // clean
+            pst.setInt(5, 10); // hunger
+            pst.setInt(6, 10); // thirst
+            pst.setInt(7, 10); // happy
+            pst.setInt(8, 10); // clean
             pst.setInt(9, 50); // tired
             pst.setInt(10, max); // health
             pst.setInt(11, 1); // isAlive
             pst.setInt(12, 0); // isSick
-            pst.setString(13, "0");  // time
+            pst.setString(13, time);  // time
             pst.setInt(14, 1); // active
+            pst.setInt(15, 10);
 
             pst.executeUpdate();
         } catch (SQLException e) {
@@ -134,7 +139,10 @@ public class Database {
             model.setHealth(rs.getInt("health"));
             model.setAlive(rs.getInt("isAlive") > 0);
             model.setSick(rs.getInt("isSick") > 0);
+            model.setTime(rs.getString("time"));
+            model.setImunity(rs.getInt("imunity"));
 
+            System.out.println("Ok_3");
         } catch (SQLException e) {
             System.out.println(e.getMessage());
             e.printStackTrace();
@@ -145,7 +153,7 @@ public class Database {
         String sql = "UPDATE game SET" +
                 " age=?, hunger=?, thirst=?, happy=?, clean=?," +
                 " tired=?, health=?, isAlive=?, isSick=?, active=?," +
-                " time=datetime('now','localtime') WHERE id=?;";
+                " time=?, imunity=?, WHERE id=?;";
         try {
             pst = conn.prepareStatement(sql);
 
@@ -158,11 +166,13 @@ public class Database {
             pst.setInt(7, m.getHealth());
             pst.setInt(8, m.getAliveInt());
             pst.setInt(9, m.getSickInt());
-            pst.setInt(10, 0);
+            pst.setString(10, m.getTime());
+            pst.setInt(11, m.getImunity());
 
-            pst.setInt(11, m.id);
+            pst.setInt(12, m.id);
 
             pst.executeUpdate();
+            
         } catch (SQLException e) {
             System.out.println(e.getMessage());
             e.printStackTrace();

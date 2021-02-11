@@ -5,11 +5,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 // import world.ucode.Database;
 
-import java.util.Objects;
+// import java.util.Objects;
 
-import static world.ucode.GameGeometry.*;
+// import static world.ucode.GameGeometry.*;
 
 public class NewScene extends AbstractScene {
+    public static final String scenePath = "/controls/";
+    public static final String userError = "user error";
 
     public NewScene(String str) {
         String css = scenePath;
