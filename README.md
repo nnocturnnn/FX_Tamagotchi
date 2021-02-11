@@ -50,11 +50,11 @@ ALL Character have 2lvl:
 With time pass 3 random events:
 - illness
 - pokedex
-- 
+- qw
 
 
 
-![view game](https://i.postimg.cc/P59cCgv1/tamagochi-07.png?raw=true "gameplay")
+![view game](https://github.com/nnocturnnn/FX_Tamagotchi/blob/master/screen/game.png ?raw=true "gameplay")
 
 ![menu](https://i.postimg.cc/Gh36VJ1T/tamagochi-02.png?raw=true "menu")
 
